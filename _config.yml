@@ -49,28 +49,32 @@ content:
         title: Imperial College London
         link: Imperial.ac.uk
         # link_text: boringcompany.com
-        sub_title: 1st aline support analyst
-        caption: Dec 2022 - March 2024d
-        description: | # this will include new lines to allow paragraphs
-          I worked as a 1st line support analyst at Imperial College London. I was responsible for providing support to staff and students with their IT issues. I was also responsible for managing the IT helpdesk and ensuring that all issues were resolved in a timely manner.
-      - layout: left
-        title: Imperial College London
-        link: Imperial.ac.uk
         sub_title: Jr software developer
         caption: March 2024 - Present
         description: | # this will include new lines to allow paragraphs
           I am currently working as a Jr software developer at Imperial College London. I have been placed in the central Rsearch Software Engineering team where I am responsible for developing software and web apps for researchers at the college. I have been working on a variety of projects using languages such as Python and Rust. 
+      - layout: left
+        sub_title: 1st line support analyst
+        caption: Dec 2022 - March 2024
+        description: | # this will include new lines to allow paragraphs
+          I worked as a 1st line support analyst at Imperial College London. I was responsible for providing support to staff and students with their IT issues. I was also responsible for managing the IT helpdesk and ensuring that all issues were resolved in a timely manner.
+      - layout: left
+        title: Victoria Commerial Bank
+        sub_title: IT Intern
+        caption: June 2018 - Sept 2018
+        description: | # this will include new lines to allow paragraphs
+          I worked as an IT intern at Victoria Commercial Bank. I was responsible for providing support to staff with their IT issues. I was also responsible for managing the IT helpdesk and ensuring that all issues were resolved in a timely manner.
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: 30daymapchallenge
+        link: github.com/sahil590
         # link_text: Project Website
         additional_links:
-          - title:  sproogen/modern-resume-theme
+          - title:  sahil590/30daymapchallenge
             icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
+            url: https://github.com/Sahil590/30daymapchallenge
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
@@ -83,15 +87,11 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
+        title: Brunel University London
+        caption: 2019 - 2022
         sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
-
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+          I studied computer science at Brunel University London. I learned a variety of skills including programming, software engineering, and networking. I also learned about databases, web development, and artificial intelligence. I graduated with a 2:1.
 
   - title: A Little More About Me
     layout: text
@@ -99,11 +99,6 @@ content:
       Alongside my interests in networks and software engineering some of my other interests and hobbies are:
       - Rock climbing
       - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
 
 # Footer
 footer_show_references: true
