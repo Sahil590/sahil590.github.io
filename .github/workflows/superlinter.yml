@@ -1,6 +1,6 @@
 name: Super-linter
 
-on: Push
+on: push
 
 jobs:
     super-lint:
