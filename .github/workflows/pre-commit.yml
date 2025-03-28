@@ -3,6 +3,9 @@ name: Pre-Commit Check
 on:
     pull_request:
         types: [opened, synchronize, reopened]
+    push:
+        paths-ignore:
+            - 'docs/**'
 
 jobs:
     pre-commit:
