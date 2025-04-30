@@ -37,11 +37,11 @@ additional_links:
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Sahil and I'm a Jr Software Devloper.I have experience making software and web apps using languages such as Python, Rust and Javascript. I have worked in a variety of roles from 1st line support to research software devlopemnt.
-  I studied computer science at brunel university and have been working at imperial college since the end of 2022. 
+  I studied computer science at brunel university and have been working at imperial college since the end of 2022.
 
 
 content:
-  
+
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -52,7 +52,7 @@ content:
         sub_title: Jr software developer
         caption: March 2024 - Present
         description: | # this will include new lines to allow paragraphs
-          I am currently working as a Jr software developer at Imperial College London. I have been placed in the central Rsearch Software Engineering team where I am responsible for developing software and web apps for researchers at the college. I have been working on a variety of projects using languages such as Python and Rust. 
+          I am currently working as a Jr software developer at Imperial College London. I have been placed in the central Rsearch Software Engineering team where I am responsible for developing software and web apps for researchers at the college. I have been working on a variety of projects using languages such as Python and Rust.
       - layout: left
         sub_title: 1st line support analyst
         caption: Dec 2022 - March 2024
@@ -110,6 +110,8 @@ remote_theme: sproogen/resume-theme
 sass:
   sass_dir: _sass
   style: compressed
+
+
 
 plugins:
  - jekyll-seo-tag
