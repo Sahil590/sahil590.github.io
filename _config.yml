@@ -22,7 +22,10 @@ linkedin_username: sahil-raja
 additional_links:
 - title: cv
   icon: fas fa-globe
-  url: sahil590.github.io
+  url: https://sahil590.github.io
+- title: contributions
+  icon: fab fa-github
+  url: https://sahil590.github.io/contributions/
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
