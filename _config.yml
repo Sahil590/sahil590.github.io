@@ -9,6 +9,7 @@ version: 2
 name: Sahil Raja
 title: Software Developer
 email: sahilraja100@gmail.com
+website: https://sahil590.github.io
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -36,8 +37,9 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Sahil and I'm a Jr Software Devloper.I have experience making software and web apps using languages such as Python, Rust and Javascript. I have worked in a variety of roles from 1st line support to research software devlopemnt.
-  I studied computer science at brunel university and have been working at imperial college since the end of 2022. 
+  Hi, I'm Sahil — a Software Developer with a passion for building robust software and web applications. I have experience working with **Python**, **Rust**, and **JavaScript**, and have contributed across a range of roles from IT support to research software engineering.
+
+  I studied Computer Science at Brunel University London and have been working at Imperial College London since late 2022, where I am part of the central Research Software Engineering team.
 
 
 content:
@@ -47,41 +49,39 @@ content:
     content:
       - layout: left
         title: Imperial College London
-        link: Imperial.ac.uk
-        # link_text: boringcompany.com
-        sub_title: Jr software developer
+        link: imperial.ac.uk
+        link_text: imperial.ac.uk
+        sub_title: Jr Software Developer
         caption: March 2024 - Present
         description: | # this will include new lines to allow paragraphs
-          I am currently working as a Jr software developer at Imperial College London. I have been placed in the central Rsearch Software Engineering team where I am responsible for developing software and web apps for researchers at the college. I have been working on a variety of projects using languages such as Python and Rust. 
+          Working as a Jr Software Developer within the central Research Software Engineering team. Responsible for developing software and web applications for researchers across the college, using languages such as <mark>Python</mark> and <mark>Rust</mark>. Collaborating with academic teams to deliver reliable, maintainable tools that support cutting-edge research.
       - layout: left
-        sub_title: 1st line support analyst
+        title: Imperial College London
+        sub_title: 1st Line Support Analyst
         caption: Dec 2022 - March 2024
         description: | # this will include new lines to allow paragraphs
-          I worked as a 1st line support analyst at Imperial College London. I was responsible for providing support to staff and students with their IT issues. I was also responsible for managing the IT helpdesk and ensuring that all issues were resolved in a timely manner.
+          Provided technical support to staff and students, resolving a wide range of IT issues efficiently. Managed the IT helpdesk queue and helped improve response times and user satisfaction across the department.
       - layout: left
-        title: Victoria Commerial Bank
+        title: Victoria Commercial Bank
         sub_title: IT Intern
         caption: June 2018 - Sept 2018
         description: | # this will include new lines to allow paragraphs
-          I worked as an IT intern at Victoria Commercial Bank. I was responsible for providing support to staff with their IT issues. I was also responsible for managing the IT helpdesk and ensuring that all issues were resolved in a timely manner.
+          Supported IT operations and provided first-line technical assistance to bank staff. Gained hands-on experience in a professional IT environment, developing strong communication and problem-solving skills.
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: 30daymapchallenge
-        link: github.com/sahil590
-        # link_text: Project Website
+        title: 30 Day Map Challenge
+        link: github.com/Sahil590/30daymapchallenge
+        link_text: View on GitHub
         additional_links:
-          - title:  sahil590/30daymapchallenge
+          - title: sahil590/30daymapchallenge
             icon: fab fa-github
             url: https://github.com/Sahil590/30daymapchallenge
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+          A month-long project exploring geospatial data visualisation with a new map every day.
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          Started this project as a way of learning <mark>React</mark>, it evolved into a fully fledged mapping application. Working through this challenge strengthened my skills in data visualisation, front-end development, and working with geospatial datasets. A project I'm proud to include in my portfolio.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -89,14 +89,23 @@ content:
       - layout: left
         title: Brunel University London
         caption: 2019 - 2022
-        sub_title: BSc Computer Science
+        sub_title: BSc Computer Science (2:1)
         description: | # this will include new lines to allow paragraphs
-          I studied computer science at Brunel University London. I learned a variety of skills including programming, software engineering, and networking. I also learned about databases, web development, and artificial intelligence. I graduated with a 2:1.
+          Studied Computer Science at Brunel University London, covering core topics including programming, software engineering, networking, databases, web development, and artificial intelligence. Graduated with a 2:1.
+
+  - title: Skills
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      **Languages:** Python, Rust, JavaScript, HTML/CSS
+
+      **Frameworks & Tools:** React, Jekyll, Git, Linux
+
+      **Other:** Research software development, IT support, geospatial data visualisation
 
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+      Alongside my interests in software engineering and research computing, some of my other hobbies are:
       - Rock climbing
       - Gaming
 

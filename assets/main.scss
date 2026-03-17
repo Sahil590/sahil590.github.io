@@ -3,3 +3,93 @@
 ---
 
 @import 'modern-resume-theme';
+
+// Custom design improvements
+
+// Typography improvements
+body {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+// Accent colour: a modern teal-blue
+$accent: #0a9396;
+
+// Header / sidebar enhancements
+#header {
+  background: linear-gradient(160deg, #001524 0%, #0a3d62 100%);
+
+  .header-welcome-text {
+    font-weight: 300;
+    letter-spacing: 0.03em;
+  }
+
+  a {
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #94d2bd !important;
+    }
+  }
+}
+
+// Section titles
+.content-title {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-bottom: 2px solid #0a9396;
+  padding-bottom: 6px;
+  display: inline-block;
+  margin-bottom: 1.2rem;
+}
+
+// Card / list item spacing
+.content-list-item {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #f0f0f0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+// Highlighted <mark> tags — use accent colour
+mark {
+  background-color: #caf0f8;
+  color: #0a3d62;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+// Link styling
+a {
+  color: #0a9396;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Quote / intro text in project cards
+blockquote, .quote {
+  border-left: 3px solid #0a9396;
+  padding-left: 1rem;
+  color: #555;
+  font-style: italic;
+}
+
+// Caption / date text
+.caption {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+// Sub-title role text
+.sub-title {
+  font-weight: 600;
+  color: #0a3d62;
+}
