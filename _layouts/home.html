@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<section class="hero" aria-labelledby="hero-title">
+  <div>
+    <p class="eyebrow">{{ site.title | escape }}</p>
+    <h1 id="hero-title">Hi, I’m <span>{{ site.name | escape }}.</span></h1>
+    <p class="hero-tagline">Thoughtful software.<br>Real-world impact.</p>
+    <p class="hero-description">{{ site.description | escape }}</p>
+    <div class="hero-actions">
+      <a class="button" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href="#contact">Let’s connect <span aria-hidden="true">→</span></a>
+    </div>
+    {% include social-links.html %}
+  </div>
+  <div class="portrait">
+    <img src="{{ site.about_profile_image | relative_url }}" alt="Portrait of {{ site.name | escape }}" width="360" height="360" fetchpriority="high">
+    <p>Python · Rust · JavaScript</p>
+  </div>
+</section>
+
+<section id="about" class="section" aria-labelledby="about-title">
+  <div class="section-heading">
+    <p class="eyebrow">01 / A little introduction</p>
+    <h2 id="about-title">About me</h2>
+  </div>
+  <div class="about-intro prose">{{ site.about_content | markdownify }}</div>
+  {% for section in site.content %}
+    {% unless section.title == 'Projects' %}
+      <div class="background-section">
+        <h3>{{ section.title | escape }}</h3>
+        {% if section.layout == 'text' %}
+          <div class="prose">{{ section.content | markdownify }}</div>
+        {% else %}
+          <div class="timeline">
+            {% for item in section.content %}
+              <article class="timeline-item">
+                <p class="caption">{{ item.caption | escape }}</p>
+                <h4>{{ item.sub_title | escape }}</h4>
+                {% if item.title %}
+                  <p class="organisation">{% if item.link %}<a href="{{ item.link | escape }}">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</p>
+                {% endif %}
+                <div class="prose">{{ item.description | markdownify }}</div>
+              </article>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    {% endunless %}
+  {% endfor %}
+</section>
+
+<section id="projects" class="section" aria-labelledby="projects-title">
+  <div class="section-heading">
+    <p class="eyebrow">02 / Learning by building</p>
+    <h2 id="projects-title">My projects</h2>
+    <p>A selection of things I’ve built and explored.</p>
+  </div>
+  <div class="card-grid">
+    {% for project in site.data.projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
+
+<section id="contributions" class="section" aria-labelledby="contributions-title">
+  <div class="section-heading">
+    <p class="eyebrow">03 / Better together</p>
+    <h2 id="contributions-title">Projects I’ve contributed to</h2>
+    <p>Collaborating on open-source tools, research software and shared ideas.</p>
+  </div>
+  <div class="card-grid">
+    {% for project in site.data.contributions %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+  <a class="text-link section-link" href="https://github.com/search?q=is%3Apr+is%3Amerged+author%3ASahil590+-user%3ASahil590&amp;type=pullrequests">See all merged contributions on GitHub ↗</a>
+</section>
+
+<section id="contact" class="section contact" aria-labelledby="contact-title">
+  <p class="eyebrow">04 / Say hello</p>
+  <h2 id="contact-title">Let’s make something useful.</h2>
+  <p>Interested in research software, web development or a shared idea? I’d love to hear from you.</p>
+  <a class="button" href="mailto:{{ site.email | escape }}">Get in touch <span aria-hidden="true">↗</span></a>
+  {% include social-links.html %}
+</section>
+{{ content }}

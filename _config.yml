@@ -1,5 +1,9 @@
 # Site
-repository: sproogen/resume-theme
+repository: Sahil590/sahil590.github.io
+url: https://sahil590.github.io
+baseurl: ""
+description: Software developer building software and web apps for research.
+lang: en-GB
 favicon: images/favicon.ico
 
 # Content configuration version
@@ -21,7 +25,7 @@ linkedin_username: sahil-raja
 additional_links:
 - title: cv
   icon: fas fa-globe
-  url: sahil590.github.io
+  url: https://sahil590.github.io
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -36,8 +40,8 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Sahil and I'm a Jr Software Devloper.I have experience making software and web apps using languages such as Python, Rust and Javascript. I have worked in a variety of roles from 1st line support to research software devlopemnt.
-  I studied computer science at brunel university and have been working at imperial college since the end of 2022. 
+  Hi, my name's Sahil and I'm a junior software developer. I have experience making software and web apps using languages such as Python, Rust and JavaScript. I have worked in a variety of roles, from first-line support to research software development.
+  I studied computer science at Brunel University and have been working at Imperial College London since the end of 2022.
 
 
 content:
@@ -47,19 +51,19 @@ content:
     content:
       - layout: left
         title: Imperial College London
-        link: Imperial.ac.uk
+        link: https://www.imperial.ac.uk
         # link_text: boringcompany.com
         sub_title: Jr software developer
         caption: March 2024 - Present
         description: | # this will include new lines to allow paragraphs
-          I am currently working as a Jr software developer at Imperial College London. I have been placed in the central Rsearch Software Engineering team where I am responsible for developing software and web apps for researchers at the college. I have been working on a variety of projects using languages such as Python and Rust. 
+          I am currently working as a junior software developer at Imperial College London. I have been placed in the central Research Software Engineering team where I am responsible for developing software and web apps for researchers at the college. I have been working on a variety of projects using languages such as Python and Rust.
       - layout: left
         sub_title: 1st line support analyst
         caption: Dec 2022 - March 2024
         description: | # this will include new lines to allow paragraphs
           I worked as a 1st line support analyst at Imperial College London. I was responsible for providing support to staff and students with their IT issues. I was also responsible for managing the IT helpdesk and ensuring that all issues were resolved in a timely manner.
       - layout: left
-        title: Victoria Commerial Bank
+        title: Victoria Commercial Bank
         sub_title: IT Intern
         caption: June 2018 - Sept 2018
         description: | # this will include new lines to allow paragraphs
@@ -69,7 +73,7 @@ content:
     content:
       - layout: top-middle
         title: 30daymapchallenge
-        link: github.com/sahil590
+        link: https://github.com/sahil590
         # link_text: Project Website
         additional_links:
           - title:  sahil590/30daymapchallenge
@@ -105,7 +109,11 @@ footer_show_references: true
 # references_title: References on request (Override references text)
 
 # Build settings
-remote_theme: sproogen/resume-theme
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 
 sass:
   sass_dir: _sass
