@@ -2,7 +2,7 @@
 
 A responsive, accessible Jekyll site using custom layouts and GitHub
 Pages–supported plugins. No API keys, remote theme or client-side API calls
-are needed. Project and contribution cards work without JavaScript.
+are needed. Contribution cards work without JavaScript.
 
 ## Run locally
 
@@ -27,14 +27,13 @@ the `github-pages` gem.
 ## Edit the content
 
 - `_config.yml`: name, biography, social links, experience, education and interests.
-- `_data/projects.yml`: featured personal repositories.
 - `_data/contributions.yml`: repositories with public contributions.
 - `_layouts/`, `_includes/` and `assets/css/main.scss`: layout and styling.
 
 For each card, provide `name`, `repo` (`owner/name`), `url`, `description` and
-`tags` (a YAML list). Contributions also use `contribution` (or `role`).
+`tags` (a YAML list). Also use `contribution` (or `role`).
 Optional fields are `language`, `quote` and `proof_url` (a merged PR link).
-For example, append this structure to the relevant data file, replacing the
+For example, append this structure to `_data/contributions.yml`, replacing the
 example values:
 
 ```yaml
@@ -51,8 +50,8 @@ example values:
 Use British English and HTTPS for external links. Verify contributions before
 adding them; the seeded entries link to merged PRs found using
 `is:pr is:merged author:Sahil590 -user:Sahil590` on GitHub.
-The original résumé project text remains in `_config.yml` for reference;
-the featured project cards are now maintained in `_data/projects.yml`.
+The original résumé project text in `_config.yml` and personal repository
+data in `_data/projects.yml` remain for reference but are not displayed.
 
 ## Colour schemes and accessibility
 
