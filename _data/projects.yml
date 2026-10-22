@@ -1,0 +1,28 @@
+# Add a featured repository with name, repo (owner/name), HTTPS url,
+# description and tags. Language, quote and contribution are optional.
+- name: 30daymapchallenge
+  repo: Sahil590/30daymapchallenge
+  url: https://github.com/Sahil590/30daymapchallenge
+  description: >-
+    I started this project as a way of learning React and it has since grown
+    into a fully fledged app. I have learned many skills through this and
+    I’m very proud of having it in my portfolio. If you don’t have a project
+    as awesome as this I would advise you to make one.
+  quote: >-
+    This is probably one of the greatest apps ever created, if you don’t agree
+    you’re probably wrong.
+  tags: [React, Maps]
+
+- name: Advent of Code
+  repo: Sahil590/Advent-of-code
+  url: https://github.com/Sahil590/Advent-of-code
+  description: My Advent of Code programming puzzles and solutions.
+  language: Python
+  tags: [Problem solving]
+
+- name: Podcast generator
+  repo: Sahil590/podcast-generator
+  url: https://github.com/Sahil590/podcast-generator
+  description: A project that generates podcast feeds using GitHub Actions.
+  language: Python
+  tags: [RSS, GitHub Actions]

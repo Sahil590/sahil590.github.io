@@ -1,0 +1,13 @@
+<article class="project-card">
+  <p class="repo-name">{{ include.project.repo | escape }}</p>
+  <h3><a href="{{ include.project.url | escape }}">{{ include.project.name | escape }} <span aria-hidden="true">↗</span></a></h3>
+  <div class="prose">{{ include.project.description | markdownify }}</div>
+  {% if include.project.quote %}<blockquote>{{ include.project.quote | escape }}</blockquote>{% endif %}
+  {% assign contribution = include.project.contribution | default: include.project.role %}
+  {% if contribution %}<p class="contribution"><strong>My contribution:</strong> {{ contribution | escape }}</p>{% endif %}
+  {% if include.project.proof_url %}<a class="text-link" href="{{ include.project.proof_url | escape }}">View merged pull request ↗</a>{% endif %}
+  <ul class="tags" aria-label="Technologies and topics">
+    {% if include.project.language %}<li>{{ include.project.language | escape }}</li>{% endif %}
+    {% for tag in include.project.tags %}<li>{{ tag | escape }}</li>{% endfor %}
+  </ul>
+</article>

@@ -1,0 +1,26 @@
+# Add another repository with name, repo (owner/name), HTTPS url, description,
+# contribution (or role) and tags. Language and proof_url are optional.
+# These examples are backed by merged public pull requests, linked below.
+- name: FAIR data repository
+  repo: ImperialCollegeLondon/fair-data-repository
+  url: https://github.com/ImperialCollegeLondon/fair-data-repository
+  description: Research data repository work at Imperial College London.
+  contribution: Added restricted licence permissions, curated licences and documentation.
+  tags: [Research software, Open data]
+  proof_url: https://github.com/ImperialCollegeLondon/fair-data-repository/pull/404
+
+- name: Imperial ColdFront plugin
+  repo: ImperialCollegeLondon/imperial_coldfront_plugin
+  url: https://github.com/ImperialCollegeLondon/imperial_coldfront_plugin
+  description: Imperial College London’s ColdFront resource management integrations.
+  contribution: Added LDAP consistency checks and alerts for allocation discrepancies.
+  tags: [Research computing, Infrastructure]
+  proof_url: https://github.com/ImperialCollegeLondon/imperial_coldfront_plugin/pull/438
+
+- name: Content ingester
+  repo: Atomic-Learning/content-ingester
+  url: https://github.com/Atomic-Learning/content-ingester
+  description: Content ingestion and validation tooling for Atomic Learning.
+  contribution: Added circular dependency checks to structure validation.
+  tags: [Validation, Developer tools]
+  proof_url: https://github.com/Atomic-Learning/content-ingester/pull/57

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-GB' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="icon" href="{{ site.favicon | relative_url }}">
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="container navigation" aria-label="Main navigation">
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="{{ site.name | escape }} — home">SR<span aria-hidden="true">.</span></a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#contributions">Contributions</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" type="button" hidden aria-label="Use dark colour scheme" aria-pressed="false">Dark mode</button>
+      </nav>
+    </header>
+    <main id="main" class="container" tabindex="-1">{{ content }}</main>
+    <footer class="container site-footer">
+      <p>© {{ 'now' | date: '%Y' }} {{ site.name | escape }} · Built with Jekyll</p>
+      {% if site.footer_show_references %}<p>References available on request.</p>{% endif %}
+      <a href="#main">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
